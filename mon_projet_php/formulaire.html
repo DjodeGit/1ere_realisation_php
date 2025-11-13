@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form {
+            border: 1px solid black;
+            padding: 20px;  
+            max-width: 300px;
+        }
+        h1 {
+            text-decoration: underline;
+        }
+        label {
+            display: block;  
+            margin-top: 10px;
+        }
+</style>
+<body>
+    <form action="info.php" method="post" name="f1">
+        <h1>INFO</h1>
+        <label for="nom">Nom: </label>
+        <input type="text" id="nom" name="nom"> <br>  
+        
+        <label for="prenom">Prénom: </label>
+        <input type="text" id="prenom" name="prenom"> <br>  
+        
+        <label for="ville">Ville: </label>
+        <select name="ville" id="ville">  
+            <option value="Bafoussam">Bafoussam</option>
+            <option value="Dschang">Dschang</option>
+            <option value="Yaoundé">Yaoundé</option>  
+            <option value="Douala">Douala</option>  
+        </select> <br>  
+        
+        <input type="submit" value="OK">  
+    </form>
+</body>
+</html>
